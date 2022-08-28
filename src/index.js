@@ -1,11 +1,10 @@
+import "./style.css";
 
-import './style.css'
-
-import { Todo, TodoList } from './classes';
-import { crearHTML } from './js/components';
+import { Todo, TodoList } from "./classes";
+import { crearHTML } from "./js/components";
 
 export const todoList = new TodoList();
 
-todoList.todos.forEach( todo => crearHTML( todo ) );
+todoList.todos.forEach((todo) => crearHTML(todo));
 
-console.log( todoList.todos )
+console.log(todoList.todos);
